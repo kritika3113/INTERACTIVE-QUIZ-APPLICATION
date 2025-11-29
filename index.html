@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz" aria-live="polite">
+        <header class="quiz__header">
+            <h2 class="quiz__title quiz__title--compact">Interactive Quiz</h2>
+            <p class="quiz__subtitle">Answer each question, get instant feedback, and see your score build live.</p>
+            <div class="quiz__meta">
+                <p id="quizProgress" class="quiz__progress" aria-live="polite"></p>
+                <p id="quizLiveScore" class="quiz__score" aria-live="polite"></p>
+            </div>
+            <span id="quizProgressLabel" class="sr-only">Quiz progress</span>
+            <div id="quizProgressBar" class="quiz__progress-bar" role="progressbar" aria-labelledby="quizProgressLabel" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-live="polite">
+                <span id="quizProgressFill" class="quiz__progress-bar-fill"></span>
+            </div>
+        </header>
+
+        <section class="quiz__card" id="quizCard">
+            <h2 id="quizQuestion" class="quiz__question"></h2>
+            <ul id="quizOptions" class="quiz__options" role="list">
+                <!-- Options injected by app.js -->
+            </ul>
+            <p id="quizFeedback" class="quiz__feedback" aria-live="polite"></p>
+            <div class="quiz__controls" id="quizControls">
+                <button id="restartButton" type="button" class="quiz__button quiz__button--secondary">Restart Quiz</button>
+                <button id="nextButton" type="button" class="quiz__button" disabled>Next Question</button>
+            </div>
+        </section>
+
+        <section id="quizSummary" class="quiz__summary" hidden>
+            <h2 class="quiz__summary-title">Quiz Finished!</h2>
+            <p id="quizScore" class="quiz__summary-score"></p>
+            <p id="quizRemark" class="quiz__summary-remark"></p>
+            <button id="restartButtonSummary" type="button" class="quiz__button">Restart Quiz</button>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
