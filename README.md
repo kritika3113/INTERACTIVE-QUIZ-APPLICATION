@@ -66,3 +66,4 @@ interactive quiz application/
 Built with curiosity and a passion for clean, interactive web experiences.
 
 ## OUTPUT
+![Image](https://github.com/user-attachments/assets/d5a6503c-f712-4e9a-aac4-a863d3a567ef)
