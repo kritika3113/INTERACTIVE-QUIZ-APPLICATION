@@ -1,11 +1,11 @@
 # INTERACTIVE-QUIZ-APPLICATION
 # Author & Internship Details
-Company: CODTECH IT SOLUTIONS
-Name: KRITIKA SHARMA
-Intern ID: CTO8DR78
-Domain: Front-End Development
-Duration: 8 Weeks
-Mentor: NEELA SANTOSH
+Company: CODTECH IT SOLUTIONS<br>
+Name: KRITIKA SHARMA<br>
+Intern ID: CT08DR78<br>
+Domain: Front-End Development<br>
+Duration: 8 Weeks<br>
+Mentor: NEELA SANTOSH<br>
 
 Interactive Quiz Application is a fully responsive, feature-rich web quiz built with vanilla **JavaScript**, **HTML5**, and **CSS3**—no external frameworks required. The project was crafted in Visual Studio Code and focuses on clean architecture, smooth animations, and an engaging user experience across devices.
 
